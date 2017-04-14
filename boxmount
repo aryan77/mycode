@@ -1,0 +1,8 @@
+#!/bin/bash
+#Connect my box.com folder
+
+if [ $1 = "unmount" ]; then
+    fusermount -u /run/media/penguin/1stStorage/Box
+else
+    mount /run/media/penguin/1stStorage/Box
+fi
